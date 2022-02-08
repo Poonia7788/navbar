@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+nav{
+    height: 80px;
+    /* background-image: url('dodge.jpg'); */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right:50px;
+    
+}
+nav ul{
+    list-style:none;
+    display: flex;
+    justify-content: space-evenly;
+    left:-100px;
+}
+.menu-btn{
+    size:22px;
+    cursor:pointer;
+    
+}
+nav ul li{
+    margin:0 5px;
+}
+nav ul a{
+    text-decoration: none;
+}
+#click{
+    display: none;
+}
+@media (max-width:11940px){
+    nav ul{
+        position: fixed;
+        top:80px;
+        left:0;
+        background:#fff;
+        height:60%;
+        width:15%;
+        display: block;
+        left:-100%;
+        transition: all 0.3s ease;
+    }
+    .image{
+        width:100px;
+        height:30px;
+    }
+    #click:checked~ul{
+        left:0px;
+    }
+    nav ul li{
+        margin:40px 50px;
+        font-size: 20px;
+
+    }
+}
+
+.burger div{
+width:25px;
+height:5px;
+background-color:red;
+margin:5px;
+cursor: pointer;
+}
+.dodge{
+    height:0%;
+    width: 100%;
+}
+.logo1{
+  width:100px;
+  height:30px;
+}
